@@ -654,188 +654,147 @@ nav a:hover {
 ========================================= */
 
 .vision-mission {
-
     padding: 70px 8%;
-
     background-color: #F1E8D9;
 }
 
 .section-heading {
-
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .section-heading span {
-
     color: #A66F50;
-
     font-size: 13px;
-
     font-weight: bold;
-
     letter-spacing: 3px;
 }
 
 .section-heading h2 {
-
     font-size: 34px;
-
     color: #414B35;
-
     margin: 12px 0;
 }
 
 .section-heading p {
-
     color: #655F52;
-
     font-size: 16px;
 }
 
 
-/* VISION AND MISSION ROWS */
+/* Vision and Mission Rows */
 
 .vm-row {
-
     display: flex;
-
     align-items: center;
-
     margin: 55px 0;
-
     min-height: 240px;
+    gap: 0;
 }
 
 .vision-row {
-
     justify-content: flex-start;
 }
 
 .mission-row {
-
     justify-content: flex-end;
 }
 
 
-/* CIRCLE DESIGN */
+/* Circle Design */
 
 .vm-circle {
-
     width: 210px;
-
     height: 210px;
-
     flex-shrink: 0;
-
     border-radius: 50%;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     color: white;
-
     z-index: 2;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .vision-circle {
-
     background-color: #414B35;
 }
 
 .mission-circle {
-
     background-color: #A66F50;
 }
 
 .circle-content {
-
     text-align: center;
 }
 
 .circle-content span {
-
     font-size: 14px;
-
     opacity: 0.8;
 }
 
 .circle-content h2 {
-
     font-size: 25px;
-
     margin: 8px 0;
-
     letter-spacing: 1px;
 }
 
 .circle-content small {
-
     font-size: 12px;
 }
 
 
-/* RECTANGLE DESIGN */
+/* Rectangle Design */
 
 .vm-card {
-
     flex: 1;
+    min-width: 0;
+    min-height: 190px;
 
     padding: 30px 40px;
 
-    min-height: 190px;
+    border-radius: 20px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+    background-color: #FFFFFF;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.09);
 }
+
+/* Vision: circle touches rectangle */
 
 .vision-card {
-
-    background-color: white;
-
-    border-radius: 0 15px 15px 0;
-
-    margin-left: -10px;
+    margin-left: 0;
+    padding-left: 40px;
 }
+
+/* Mission: circle touches rectangle */
 
 .mission-card {
-
-    background-color: white;
-
-    border-radius: 15px 0 0 15px;
-
-    margin-right: -10px;
+    margin-right: 0;
+    padding-right: 40px;
 }
 
+
+/* Rectangle Text */
+
 .vm-card h2 {
-
     color: #414B35;
-
     font-size: 25px;
-
     margin-bottom: 15px;
 }
 
 .vm-card ul {
-
     padding-left: 20px;
-
     line-height: 2;
-
     color: #655F52;
 }
 
 .vm-card li {
-
     padding-left: 5px;
 }
-
-
 /* =========================================
    CORE VALUES
 ========================================= */
