@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | FICTION INTERNATIONAL SCHOOL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .gallery-section {
+            padding: 50px 7%;
+            text-align: center;
+        }
+
+        .gallery-section h1 {
+            font-size: 40px;
+            color: #414B35;
+            margin-bottom: 15px;
+        }
+
+        .gallery-section p {
+            color: #655F52;
+            margin-bottom: 35px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.07);
+        }
+
+        .gallery-item h3 {
+            padding: 15px;
+            color: #414B35;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+
+        <div class="school-name">
+            FICTION INTERNATIONAL SCHOOL
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Gallery Introduction -->
+    <section class="hero">
+
+        <div class="about">
+
+            <h1><strong><i>OUR SCHOOL GALLERY</i></strong></h1>
+
+            <h2>Memories, Learning and Achievements</h2>
+
+            <p>
+                Explore the beautiful moments of Fiction International School.
+                From classroom learning to sports and cultural events,
+                every moment creates a wonderful memory.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Image Gallery -->
+    <section class="gallery-section">
+
+        <h1>Our Memories</h1>
+
+        <p>A glimpse of life at Stella Maris School</p>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/image.png" alt="School Building">
+                <h3>School Building</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/classroom.jpg" alt="Classroom">
+                <h3>Our Classrooms</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/library.jpg" alt="Library">
+                <h3>School Library</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/computer Lab.jpg" alt="Computer Lab">
+                <h3>Computer Lab</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/sports.jpg" alt="Sports Activities">
+                <h3>Sports Activities</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/events.jpg" alt="School Events">
+                <h3>School Events</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Fiction International School</h3>
+
+        <p>Quality Education for a Brighter Future</p>
+
+        <p>
+            © 2026 Fiction International School.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

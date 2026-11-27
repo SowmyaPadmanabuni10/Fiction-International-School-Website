@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admissions | FICTION INTERNATIONAL SCHOOL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+
+        <div class="school-name">
+           FICTION INTERNATIONAL SCHOOL
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Admissions Introduction -->
+    <section class="hero">
+
+        <div class="about">
+
+            <h1><strong><i>Admissions</i></strong></h1>
+
+            <h2>Begin Your Journey With Us</h2>
+
+            <p>
+                Welcome to Fiction International School!
+
+                We are happy to welcome students who are
+                eager to learn, explore and grow.
+
+                Our admission process is designed to help
+                parents understand our school and the
+                opportunities we provide.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Admission Process -->
+    <section class="location">
+
+        <h2>Admission Process</h2>
+
+        <div class="school-address">
+
+            <h3>Step 1 – Enquiry</h3>
+
+            <p>
+                Parents can contact the school to
+                enquire about admission details.
+            </p>
+
+        </div>
+
+        <div class="school-address">
+
+            <h3>Step 2 – Application</h3>
+
+            <p>
+                Collect and complete the admission
+                application form.
+            </p>
+
+        </div>
+
+        <div class="school-address">
+
+            <h3>Step 3 – Document Submission</h3>
+
+            <p>
+                Submit the required student documents
+                to the school office.
+            </p>
+
+        </div>
+
+        <div class="school-address">
+
+            <h3>Step 4 – Admission Confirmation</h3>
+
+            <p>
+                Contact the school office for
+                confirmation and further instructions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Documents Required -->
+    <section class="hero">
+
+        <div class="about">
+
+            <h1>Documents Required</h1>
+
+            <h2>Keep These Documents Ready</h2>
+
+            <p>
+                • Student Birth Certificate
+                <br>
+                • Previous School Transfer Certificate (if applicable)
+                <br>
+                • Previous Academic Records (if applicable)
+                <br>
+                • Passport Size Photographs
+                <br>
+                • Parent or Guardian Contact Details
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Admission Enquiry Form -->
+    <section class="location">
+
+        <h2>Admission Enquiry Form</h2>
+
+        <p>
+            Interested in joining Fiction International School?
+            Fill in the details below.
+        </p>
+
+        <div class="school-address">
+
+            <form onsubmit="submitEnquiry(event)">
+
+                <label>Student Name</label>
+                <input type="text" id="studentName"
+                    placeholder="Enter student name" required>
+
+                <br><br>
+
+                <label>Parent Name</label>
+                <input type="text" id="parentName"
+                    placeholder="Enter parent name" required>
+
+                <br><br>
+
+                <label>Class Applying For</label>
+                <select id="className" required>
+
+                    <option value="">Select Class</option>
+                    <option>Class I</option>
+                    <option>Class II</option>
+                    <option>Class III</option>
+                    <option>Class IV</option>
+                    <option>Class V</option>
+                    <option>Class VI</option>
+                    <option>Class VII</option>
+                    <option>Class VIII</option>
+                    <option>Class IX</option>
+                    <option>Class X</option>
+
+                </select>
+
+                <br><br>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter phone number"
+                    pattern="[0-9]{10}" required>
+
+                <br><br>
+
+                <label>Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter email address" required>
+
+                <br><br>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Fiction International School</h3>
+
+        <p>Quality Education for a Brighter Future</p>
+
+        <p>
+            © 2026 Fiction International School.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
