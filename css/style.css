@@ -1,0 +1,1651 @@
+
+/* =========================================
+   GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F3E9;
+    color: #414B35;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
+header {
+    background-color: #414B35;
+    color: white;
+    padding: 22px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    animation: slideDown 1s ease;
+}
+
+.school-name {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1.5s ease;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F8F3E9;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #E9BFA9;
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   SCHOOL TITLE
+========================================= */
+
+.school-title {
+    text-align: center;
+    padding: 28px 15px;
+    background-color: #F8F3E9;
+}
+
+.school-title h1 {
+    color: #414B35;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    animation: slideUp 1s ease;
+}
+
+
+/* =========================================
+   SCHOOL IMAGE
+========================================= */
+
+.school-image {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    min-height: 450px;
+    overflow: hidden;
+
+    animation: fadeIn 2s ease;
+}
+
+.school-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.7s ease;
+}
+
+.school-image:hover > img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   CHATBOT WELCOME SPEECH BUBBLE
+========================================= */
+
+.welcome-content {
+
+    position: absolute;
+
+    top: 80%;
+    right: 8%;
+
+    transform: translateY(-50%);
+
+    width: 380px;
+    max-width: 90%;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    overflow: visible;
+
+    animation: nonez;
+}
+
+
+/* CHATBOT HEADER */
+
+.chatbot-header {
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    background-color: #414B35;
+
+    padding: 16px 20px;
+
+    border-radius: 16px 16px 0 0;
+
+    min-height: 74px;
+}
+
+
+/* GRADUATION CAP ICON */
+
+.chatbot-icon {
+
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F8F3E9;
+
+    border-radius: 50%;
+
+    font-size: 23px;
+}
+
+
+/* HELLO TEXT */
+
+.chatbot-header h2 {
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin: 0;
+}
+
+
+/* CHATBOT MESSAGE AREA */
+
+.chatbot-message {
+
+    position: relative;
+
+    background-color: white;
+
+    padding: 20px 20px 18px;
+
+    border-radius: 0 0 16px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+/* FIRST WELCOME MESSAGE */
+
+.chatbot-message p {
+
+    color: #252D23;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+    background: transparent;
+
+    padding: 0;
+
+    box-shadow: none;
+}
+
+.chatbot-message p strong {
+
+    color: #252D23;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.chatbot-message p i {
+
+    font-weight: 600;
+}
+
+
+/* SECOND WELCOME MESSAGE */
+
+.chatbot-message h5 {
+
+    color: #252D23;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    margin: 0;
+}
+
+
+/* SPEECH BUBBLE TAIL */
+
+.chatbot-message::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -15px;
+
+    right: 20px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 16px solid white;
+
+    border-left: 16px solid transparent;
+
+    border-right: 0 solid transparent;
+}
+
+
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.location {
+
+    text-align: center;
+
+    padding: 65px 7%;
+
+    background-color: #F1E8D9;
+}
+
+.location h2 {
+
+    color: #414B35;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    animation: slideUp 1s ease;
+}
+
+.location p {
+
+    color: #655F52;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* LOCATE US BUTTON */
+
+.location button {
+
+    background-color: #657C59;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.location button:hover {
+
+    background-color: #414B35;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* MAP CONTAINER */
+
+#map-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+#school-map {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 12px;
+}
+
+
+/* SCHOOL ADDRESS */
+
+.school-address {
+
+    background-color: white;
+
+    max-width: 650px;
+
+    margin: 10px auto 30px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    animation: fadeIn 1.5s ease;
+}
+
+.school-address h3 {
+
+    color: #657C59;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+.school-address p {
+
+    line-height: 1.9;
+
+    color: #655F52;
+}
+
+
+/* =========================================
+   COMMON HERO SECTION
+========================================= */
+
+.hero {
+
+    background-color: #F8F3E9;
+
+    padding: 55px 7%;
+}
+
+.about {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about h1 {
+
+    font-size: 46px;
+
+    color: #414B35;
+
+    margin-bottom: 18px;
+
+    letter-spacing: 1.5px;
+
+    animation: slideUp 1s ease;
+}
+
+.about h2 {
+
+    font-size: 25px;
+
+    color: #A66F50;
+
+    margin-bottom: 18px;
+
+    animation: fadeIn 1.5s ease;
+}
+
+.about p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #655F52;
+
+    animation: slideUp 1.5s ease;
+}
+
+
+/* =========================================
+   ABOUT PAGE HERO
+========================================= */
+
+.about-hero {
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 55px 8%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(65,75,53,0.92),
+        rgba(65,75,53,0.45)
+    ),
+    url("../images/school.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.about-hero-content {
+
+    max-width: 650px;
+}
+
+.about-tag {
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.about-hero h1 {
+
+    font-size: 42px;
+
+    margin: 18px 0;
+
+    animation: slideUp 1s ease;
+}
+
+.about-hero p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.explore-btn {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 28px;
+
+    background-color: #E9BFA9;
+
+    color: #414B35;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+
+    background-color: white;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   ABOUT INTRODUCTION
+========================================= */
+
+.about-intro {
+
+    padding: 65px 8%;
+
+    background-color: #F8F3E9;
+}
+
+.intro-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.intro-heading h2 {
+
+    font-size: 32px;
+
+    color: #414B35;
+
+    margin-bottom: 10px;
+}
+
+.intro-heading p {
+
+    color: #A66F50;
+
+    font-size: 17px;
+}
+
+.intro-content {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+.intro-box {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #657C59;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease;
+}
+
+.intro-box:hover {
+
+    transform: translateY(-6px);
+}
+
+.intro-box h3 {
+
+    color: #414B35;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+.intro-box p {
+
+    color: #655F52;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   VISION AND MISSION
+========================================= */
+
+.vision-mission {
+
+    padding: 70px 8%;
+
+    background-color: #F1E8D9;
+}
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+
+    color: #A66F50;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+
+    font-size: 34px;
+
+    color: #414B35;
+
+    margin: 12px 0;
+}
+
+.section-heading p {
+
+    color: #655F52;
+
+    font-size: 16px;
+}
+
+
+/* VISION AND MISSION ROWS */
+
+.vm-row {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 55px 0;
+
+    min-height: 240px;
+}
+
+.vision-row {
+
+    justify-content: flex-start;
+}
+
+.mission-row {
+
+    justify-content: flex-end;
+}
+
+
+/* CIRCLE DESIGN */
+
+.vm-circle {
+
+    width: 210px;
+
+    height: 210px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    z-index: 2;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vision-circle {
+
+    background-color: #414B35;
+}
+
+.mission-circle {
+
+    background-color: #A66F50;
+}
+
+.circle-content {
+
+    text-align: center;
+}
+
+.circle-content span {
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+.circle-content h2 {
+
+    font-size: 25px;
+
+    margin: 8px 0;
+
+    letter-spacing: 1px;
+}
+
+.circle-content small {
+
+    font-size: 12px;
+}
+
+
+/* RECTANGLE DESIGN */
+
+.vm-card {
+
+    flex: 1;
+
+    padding: 30px 40px;
+
+    min-height: 190px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+}
+
+.vision-card {
+
+    background-color: white;
+
+    border-radius: 0 15px 15px 0;
+
+    margin-left: -10px;
+}
+
+.mission-card {
+
+    background-color: white;
+
+    border-radius: 15px 0 0 15px;
+
+    margin-right: -10px;
+}
+
+.vm-card h2 {
+
+    color: #414B35;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.vm-card ul {
+
+    padding-left: 20px;
+
+    line-height: 2;
+
+    color: #655F52;
+}
+
+.vm-card li {
+
+    padding-left: 5px;
+}
+
+
+/* =========================================
+   CORE VALUES
+========================================= */
+
+.core-values {
+
+    padding: 70px 8%;
+
+    background-color: #F8F3E9;
+}
+
+.values-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+
+    justify-content: center;
+}
+
+.value-card {
+
+    flex: 1 1 250px;
+
+    max-width: 300px;
+
+    background-color: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border-bottom: 4px solid #657C59;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.value-card h3 {
+
+    color: #414B35;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.value-card p {
+
+    color: #655F52;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   ABOUT CLOSING BANNER
+========================================= */
+
+.about-banner {
+
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background-color: #414B35;
+
+    color: white;
+}
+
+.about-banner h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.about-banner p {
+
+    font-size: 17px;
+
+    color: #F1E8D9;
+}
+
+
+/* =========================================
+   CONTACT PAGE HERO
+========================================= */
+
+.contact-hero {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 10%;
+
+    background: #e9e5d8;
+}
+
+.contact-hero-content {
+
+    max-width: 750px;
+}
+
+.contact-tag,
+.contact-section-heading span,
+.contact-message-info > span {
+
+    color: #68734d;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.contact-hero h1 {
+
+    font-size: 48px;
+
+    color: #343c2d;
+
+    margin: 20px 0;
+}
+
+.contact-hero h1 span,
+.contact-section-heading h2 span,
+.contact-message-info h2 span {
+
+    color: #78865b;
+}
+
+.contact-hero p {
+
+    color: #55594d;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.contact-explore {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #4e5b3b;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CONTACT DETAILS
+========================================= */
+
+.contact-details {
+
+    padding: 75px 8%;
+
+    background: #f8f7f1;
+}
+
+.contact-section-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.contact-section-heading h2 {
+
+    color: #343c2d;
+
+    font-size: 34px;
+
+    margin: 18px 0;
+}
+
+.contact-section-heading p {
+
+    color: #686b60;
+
+    line-height: 1.7;
+}
+
+.contact-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+.contact-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    border: 1px solid #e6e5d9;
+
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-icon {
+
+    font-size: 35px;
+
+    color: #78865b;
+
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+
+    color: #39432f;
+
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+
+    color: #686b60;
+
+    line-height: 1.7;
+
+    min-height: 55px;
+}
+
+.contact-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #69794d;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   CONTACT MESSAGE SECTION
+========================================= */
+
+.contact-message-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    padding: 85px 10%;
+
+    background: #e9e5d8;
+
+    align-items: center;
+}
+
+.contact-message-info h2 {
+
+    font-size: 38px;
+
+    color: #343c2d;
+
+    line-height: 1.3;
+
+    margin: 20px 0;
+}
+
+.contact-message-info p {
+
+    color: #5f6256;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+.contact-note {
+
+    margin-top: 35px;
+
+    padding-left: 20px;
+
+    border-left: 3px solid #78865b;
+}
+
+.contact-note h3 {
+
+    color: #3d4931;
+}
+
+.contact-note p {
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form-box {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-box h2 {
+
+    color: #3c4632;
+
+    margin-bottom: 10px;
+}
+
+.contact-form-box > p {
+
+    color: #77796e;
+
+    margin-bottom: 25px;
+}
+
+.contact-form-box form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form-box label {
+
+    margin: 12px 0 8px;
+
+    color: #414a36;
+
+    font-weight: 600;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #dedfd4;
+
+    border-radius: 6px;
+
+    background: #fafaf7;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+
+    border-color: #78865b;
+}
+
+.contact-form-box textarea {
+
+    resize: vertical;
+}
+
+.contact-form-box button {
+
+    margin-top: 22px;
+
+    padding: 14px;
+
+    background: #65744c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-form-box button:hover {
+
+    background: #465538;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background-color: #414B35;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+    animation: fadeIn 1.5s ease;
+}
+
+footer h3 {
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+footer p {
+
+    font-size: 15px;
+
+    margin: 8px;
+
+    color: #F1E8D9;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .school-name {
+
+        font-size: 21px;
+    }
+
+    nav {
+
+        justify-content: center;
+
+        gap: 14px;
+    }
+
+    nav a {
+
+        font-size: 13px;
+    }
+
+    .school-title h1 {
+
+        font-size: 25px;
+    }
+
+    .school-image {
+
+        height: 65vh;
+
+        min-height: 420px;
+    }
+
+    /* CHATBOT MOBILE POSITION */
+
+    .welcome-content {
+
+        width: 360px;
+
+        max-width: 88%;
+
+        right: 50%;
+
+        top: 50%;
+
+        transform: translate(50%, -50%);
+    }
+
+    .location {
+
+        padding: 40px 5%;
+    }
+
+    .location h2 {
+
+        font-size: 27px;
+    }
+
+    .about h1 {
+
+        font-size: 30px;
+    }
+
+    .about h2 {
+
+        font-size: 21px;
+    }
+
+    .about p {
+
+        font-size: 15px;
+    }
+
+    .about-hero h1 {
+
+        font-size: 30px;
+    }
+
+    .intro-content {
+
+        flex-direction: column;
+    }
+
+    .vm-row {
+
+        flex-direction: column;
+
+        margin: 40px 0;
+
+        gap: 0;
+    }
+
+    .vm-circle {
+
+        width: 170px;
+
+        height: 170px;
+    }
+
+    .vm-card {
+
+        width: 100%;
+
+        flex: auto;
+
+        margin: -10px 0 0 0;
+
+        padding: 30px 22px;
+
+        border-radius: 12px;
+    }
+
+    .mission-row {
+
+        flex-direction: column-reverse;
+    }
+
+    .values-grid {
+
+        flex-direction: row;
+
+        align-items: stretch;
+    }
+
+    .value-card {
+
+        flex: 1 1 220px;
+    }
+
+    .section-heading h2 {
+
+        font-size: 28px;
+    }
+
+    .contact-hero h1 {
+
+        font-size: 36px;
+    }
+
+    .contact-section-heading h2 {
+
+        font-size: 28px;
+    }
+
+    .contact-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-message-section {
+
+        grid-template-columns: 1fr;
+
+        padding: 55px 7%;
+
+        gap: 35px;
+    }
+
+    .contact-message-info h2 {
+
+        font-size: 30px;
+    }
+
+    .contact-form-box {
+
+        padding: 25px;
+    }
+
+    footer p {
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 480px) {
+
+    .school-name {
+
+        font-size: 18px;
+    }
+
+    .school-title h1 {
+
+        font-size: 21px;
+
+        letter-spacing: 1px;
+    }
+
+    .school-image {
+
+        min-height: 380px;
+
+        height: 60vh;
+    }
+
+    .welcome-content {
+
+        width: 330px;
+
+        max-width: 88%;
+    }
+
+    .chatbot-header {
+
+        padding: 14px 16px;
+    }
+
+    .chatbot-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 22px;
+    }
+
+    .chatbot-header h2 {
+
+        font-size: 17px;
+    }
+
+    .chatbot-message {
+
+        padding: 17px 16px 18px;
+
+        gap: 13px;
+    }
+
+    .chatbot-message p {
+
+        font-size: 13px;
+    }
+
+    .chatbot-message h5 {
+
+        font-size: 12px;
+    }
+
+    .location h2 {
+
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+
+}
